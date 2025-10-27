@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Your Cart | AvaBookStore</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Top Navbar -->
+    <header class="navbar">
+      <div class="logo">AvaBookStore 📚</div>
+      <nav>
+        <a href="bookstore.html">Store</a>
+        <a href="cart.html">Cart</a>
+        <a href="profile.html">Profile</a>
+        <a href="#" onclick="signOut()">Sign Out</a>
+      </nav>
+    </header>
+
+    <h2>Your Cart</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Author</th>
+          <th>Price (₹)</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody id="cartBody"></tbody>
+      <tfoot>
+        <tr>
+          <td colspan="2"><strong>Total</strong></td>
+          <td id="totalPrice">₹0</td>
+          <td></td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <div style="text-align: center">
+      <button id="checkoutBtn">Checkout</button>
+    </div>
+
+    <script type="module" src="cart.js"></script>
+  </body>
+</html>

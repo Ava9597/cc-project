@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Your Profile | AvaBookStore</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Top Navbar -->
+    <header class="navbar">
+      <div class="logo">SerenityStore 📚</div>
+      <nav>
+        <a href="bookstore.html">Store</a>
+        <a href="cart.html">Cart</a>
+        <a href="profile.html">Profile</a>
+        <a href="#" onclick="signOut()">Sign Out</a>
+      </nav>
+    </header>
+
+    <h2 style="text-align: center">Your Profile</h2>
+
+    <div class="profile-container">
+      <p id="userEmail">Email: Loading...</p>
+
+      <p>
+        Username:
+        <input type="text" id="usernameInput" />
+        <button onclick="updateUsername()">Update</button>
+      </p>
+    </div>
+
+    <h3 style="text-align: center">Purchased Books</h3>
+    <table border="1" cellpadding="8" cellspacing="0" style="margin: 0 auto">
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Author</th>
+          <th>Price (₹)</th>
+        </tr>
+      </thead>
+      <tbody id="purchaseTable"></tbody>
+    </table>
+
+    <script type="module" src="profile.js"></script>
+  </body>
+</html>

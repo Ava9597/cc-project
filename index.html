@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>SerenityBookStore | Home</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header class="navbar">
+      <div class="logo">SerenityBookStore 📚</div>
+      <nav>
+        <a href="bookstore.html">Store</a>
+        <a href="cart.html">Cart</a>
+        <a href="login.html">Login</a>
+      </nav>
+    </header>
+
+    <!-- Welcome -->
+    <section class="welcome" style="text-align: center; margin: 50px">
+      <h1>Welcome to SerenityBookStore</h1>
+      <p>Your next favorite book awaits.</p>
+      <a href="bookstore.html" class="btn">Go to Store</a>
+    </section>
+
+    <!-- Recommended Books display -->
+    <section>
+      <h3 style="text-align: center">📚 Recommended for You</h3>
+      <div id="recommendationList" class="book-grid"></div>
+    </section>
+
+    <script type="module" src="index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,181 @@
+/* Base Styles */
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  padding: 0;
+  margin: 0;
+}
+
+h2, h3 {
+  text-align: center;
+  color: #333;
+}
+
+input {
+  padding: 8px;
+  width: 250px;
+  margin: 5px auto;
+  display: block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  padding: 8px 12px;
+  margin: 10px auto;
+  display: block;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Top Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #c8a2c8; /* lilac */
+  color: white;
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.navbar .logo {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.navbar nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: bold;
+}
+
+.navbar nav a:hover {
+  text-decoration: underline;
+}
+
+/* Book Grid */
+.book-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.book-card {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+/* Cart Table */
+table {
+  width: 90%;
+  margin: 20px auto;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+
+tfoot td {
+  font-weight: bold;
+}
+/* Profile page */
+.profile-container {
+  text-align: center;
+  margin: 20px;
+}
+
+#profilePhoto {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto 10px auto;
+  border: 2px solid #007bff;
+}
+
+#photoInput {
+  margin: 10px auto;
+  display: block;
+}
+
+div p a {
+  color: #c8a2c8;
+  text-decoration: none;
+}
+
+div p a:hover {
+  color: rgb(73, 165, 235);
+}
+@media print {
+  body * {
+    visibility: hidden; 
+  }
+
+  #receipt, #receipt * {
+    visibility: visible; 
+  }
+
+  #receipt {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
+
+  #printBtn {
+    display: none; 
+  }
+}
+
+.book-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 180px;
+  margin: 8px;
+}
+
+.book-card img {
+  height: 250px;       /* control height */
+ max-width: 180px;
+  object-fit: contain; /* show entire image */
+  border-radius: 8px;
+  margin: 0;
+}
+.book-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;  /* Reduce this value; try 8px for smaller spacing */
+}
+
